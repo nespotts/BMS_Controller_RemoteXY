@@ -5,7 +5,7 @@
 
 
 
-String mainURL ="http://192.168.8.148";
+String mainURL ="http://192.168.8.146:8000";
 JsonDocument doc;
 
 
@@ -148,7 +148,7 @@ void sendBMSData() {
   values = values.substring(0, values.length() - 1);
   // Serial.println(values);
   
-  set_BMS_values(1, values);
+  set_BMS_values(3, values);
 
   // Blynk.virtualWrite(V5, bms.get_voltage());
   // Blynk.virtualWrite(V6, bms.get_current());
