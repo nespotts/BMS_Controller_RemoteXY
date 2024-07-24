@@ -46,6 +46,7 @@ void ConnectWifi() {
 void manageBlynkConnection2() {
   if (!WiFi.isConnected()) {    // changed from !Blynk.connected()
     // Serial.println("Wifi Disconnected");
+    led_off.Update();
     ConnectWifi();
   }
 }
